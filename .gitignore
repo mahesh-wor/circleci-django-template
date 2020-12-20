@@ -1,3 +1,15 @@
+#Production
+postgres_data/
+nginx/nginx-proxy.conf
+logs/
+sock/
+pg_env.txt
+env.txt
+_redis_data/
+redis/
+./static
+frontend_app/
+
 *.pyc
 static/
 static/
