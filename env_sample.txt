@@ -1,4 +1,5 @@
-#USE REQUIRED SETTING
+#Change env_sample.txt to env.txt (or as mentioned in docker-compose.yml)
+
 # DEBUG=1
 # SECRET_KEY=xyggedefsdfsdf&g3v(i0+s^*3y
 # SQL_ENGINE=django.contrib.gis.db.backends.postgis

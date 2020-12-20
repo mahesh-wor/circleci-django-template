@@ -1,6 +1,5 @@
-pip install -r requirements.txt
-python manage.py collectstatic --no-input
-# python manage.py compilemessages -l ne -l en
-python manage.py migrate --no-input
-pytest
-python manage.py runserver 0.0.0.0:8000
+#!/bin/sh
+python3 manage.py collectstatic --noinput
+python manage.py makemigrations --merge --noinput
+python3 manage.py migrate --noinput
+uwsgi --ini uwsgi.ini

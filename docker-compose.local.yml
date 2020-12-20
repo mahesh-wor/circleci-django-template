@@ -1,15 +1,14 @@
-
 version: '3'
 
 services:
-  server:
-    env_file: .env
+  web:
+    env_file: env.txt   # Change env_sample.txt to env.txt
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - .:/code
     ports:
-      - "8020:8000"
-#    external_links:
-#     - psql-11-sakchyam_db:db
+      - "8000:8000"
+
+# For db config read README.md/## Postgresql

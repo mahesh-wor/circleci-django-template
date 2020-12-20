@@ -93,7 +93,7 @@ For creating a postgresql `role` , `database` & enabling `extensions`.
     ------------------------------------------------------------------------
     nginx    /docker-entrypoint.sh ngin ...   Up      0.0.0.0:80->80/tcp    
     web      sh entrypoint.sh                 Up      0.0.0.0:8001->8001/tcp
-    worker   celery -A varicon worker - ...   Up 
+    worker   celery -A project worker - ...   Up 
 
 For viewing logs of your docker services.
 
